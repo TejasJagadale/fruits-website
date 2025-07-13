@@ -68,3 +68,9 @@
   gap: 2rem;
   /* margin: 2rem 0; */
 }
+
+@media only screen and (max-width: 768px) {
+  .about-image{
+    display: none;
+  }
+}
