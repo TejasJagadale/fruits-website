@@ -110,17 +110,98 @@
   gap: 20px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .about-cntsection,
   .feedback-form-container {
-    padding: 15px;
     width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .pageheadmain {
+    padding: 10px;
+  }
+
+  .pagehead {
+    font-size: 24px;
   }
 
   .contact-section {
-    display: flex;
+    padding: 15px;
+  }
+
+  .about-container {
+    padding: 15px;
+  }
+
+  .section-header h2 {
+    font-size: 22px;
+  }
+
+  .feature-item {
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 40px;
+    align-items: flex-start;
+  }
+
+  .feature-icon {
+    margin-bottom: 10px;
+  }
+
+  .feedback-form-container {
+    padding: 15px;
+  }
+
+  .feedback-form-container h1 {
+    font-size: 24px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .success-message {
+    padding: 15px;
+  }
+
+  .success-message h2 {
+    font-size: 20px;
   }
 }
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+  .pagehead {
+    font-size: 20px;
+  }
+
+  .section-header h2 {
+    font-size: 18px;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+  }
+
+  .feedback-form-container h1 {
+    font-size: 20px;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+}
+
