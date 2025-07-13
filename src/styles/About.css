@@ -1,0 +1,70 @@
+.pagehead {
+  font-weight: bolder;
+  font-size: 42px;
+}
+
+.abt-section {
+  /* padding: 5rem 2rem; */
+  background: linear-gradient(135deg, #f5f5dc 0%, #e8f5e9 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 90%;
+  /* margin: 0 auto; */
+}
+
+.abt-content {
+  flex: 1 1;
+  min-width: 300px;
+  background: var(--white);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.section-abtheader {
+  text-align: center;
+  margin-bottom: 0rem;
+}
+
+.righthead {
+  font-size: 2rem;
+}
+
+.pageheadmain {
+  width: 100%;
+  padding: 80px 30px;
+  background-image: url(http://localhost:3000/static/media/banner.9a645fb….jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #f7f77c;
+  text-align: center;
+  /* margin-bottom: 40px; */
+}
+
+.feature-itemp {
+  text-align: left;
+  color: #777;
+}
+
+.features-abtlist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* margin: 2rem 0; */
+}

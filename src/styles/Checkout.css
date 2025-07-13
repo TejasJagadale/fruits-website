@@ -1,0 +1,268 @@
+/* Checkout Page Styles */
+.checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.billing-details,
+.order-summary {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.order-items {
+  margin: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.item-name span {
+  color: #777;
+}
+
+.order-totals {
+  margin-top: 20px;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.grand-total {
+  font-weight: bold;
+  font-size: 1.2em;
+  border-top: 1px solid #ddd;
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+.place-order-btn {
+  width: 100%;
+  padding: 15px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.place-order-btn:hover {
+  background: #45a049;
+}
+
+/* Confirmation Page Styles */
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.confirmation-content {
+  text-align: center;
+  max-width: 500px;
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-icon {
+  color: #4caf50;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.continue-shopping-btn {
+  padding: 12px 30px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Toast Notification Styles */
+.Toastify__toast-container {
+  width: 400px;
+}
+
+.Toastify__toast {
+  border-radius: 4px;
+  padding: 15px;
+  font-size: 14px;
+}
+
+.Toastify__toast--error {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.Toastify__toast--success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.Toastify__close-button {
+  color: white;
+}
+
+.Toastify__progress-bar {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.required-field {
+  border: 1px solid #ff6b6b !important;
+  background-color: #fff6f6;
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .checkout-container {
+    padding: 15px;
+  }
+
+  .checkout-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-row .form-group {
+    margin-bottom: 15px;
+  }
+
+  .billing-details,
+  .order-summary {
+    padding: 15px;
+  }
+
+  .order-item {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .item-name span {
+    display: block;
+    margin-top: 3px;
+  }
+
+  .place-order-btn {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  /* Toast adjustments */
+  .Toastify__toast-container {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .checkout-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .billing-details h3,
+  .order-summary h3 {
+    font-size: 1.2rem;
+  }
+
+  input,
+  select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .total-row {
+    font-size: 0.9em;
+  }
+
+  .grand-total {
+    font-size: 1em;
+  }
+
+  .confirmation-content {
+    padding: 20px;
+    margin: 0 15px;
+  }
+
+  .success-icon {
+    font-size: 2em;
+  }
+}
+
+/* Special case for very small screens */
+@media only screen and (max-width: 360px) {
+  .checkout-container {
+    padding: 10px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 0.9rem;
+  }
+
+  .place-order-btn {
+    font-size: 0.9em;
+  }
+}

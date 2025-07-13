@@ -1,0 +1,42 @@
+.tcmain {
+  padding: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.tclist {
+  padding: 8px 20px;
+}
+
+.tchead {
+  margin-top: 20px;
+}
+
+/* For tablets and larger phones */
+@media (min-width: 481px) {
+  .tcmain {
+    padding: 20px 40px;
+  }
+  .tclist {
+    padding: 8px 30px;
+  }
+}
+
+/* For small laptops and larger tablets */
+@media (min-width: 769px) {
+  .tcmain {
+    padding: 20px 60px;
+    line-height: 1.8;
+  }
+}
+
+/* For desktops and larger screens */
+@media (min-width: 1025px) {
+  .tcmain {
+    padding: 20px 100px;
+    line-height: 40px;
+  }
+  .tclist {
+    padding: 8px 40px;
+  }
+}

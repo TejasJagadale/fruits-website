@@ -1,0 +1,30 @@
+.ppmain {
+  padding: 20px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.heading {
+  margin-top: 20px;
+  font-weight: bolder;
+}
+
+.desc {
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* For tablets and larger phones */
+@media (min-width: 481px) {
+  .ppmain {
+    padding: 20px 40px;
+    line-height: 1.8;
+  }
+}
+
+/* For small laptops and larger tablets */
+@media (min-width: 769px) {
+  .ppmain {
+    padding: 20px 100px;
+  }
+}

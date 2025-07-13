@@ -1,0 +1,126 @@
+/* Feedback Form Styles */
+.feedback-form-container {
+  width: 45%;
+  /* margin: 0 auto; */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.error {
+  border-color: #ff4444 !important;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h2 {
+  color: #4caf50;
+}
+
+.success-message button {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.success-message button:hover {
+  background-color: #0b7dda;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+.cnticon {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .feedback-form-container {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 40px;
+  }
+}
